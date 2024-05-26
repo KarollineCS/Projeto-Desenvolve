@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Nome do Seu Negócio]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Ponta inicial da página com frase motivacional e nome do negócio-->
+    <header>
+        <h1>[Nome do Seu Negócio]</h1>
+        <p>Transformando seu ambiente com conforto e eficiência!</p>
+    </header>
+
+    <!--Cabeçalho da página com todos os tópicos navegáveis na própria página-->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#services">Serviços</a>
+        <a href="#testimonials">Depoimentos</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <!--Primeiro tópico da página para recepção do cliente e chamar atenção-->
+    <section id="home">
+        <div class="carrossel" id="carrossel">
+            <h2 class="printitle">Bem-vindo à [Nome do Seu Negócio]</h2>
+            <p>Transformando seu ambiente com conforto e eficiência!</p>
+            <!--<button>Saiba Mais</button>-->
+            <div class="slider">
+                <div class="container">
+                    <img src="imagens/imagem1.jpg" alt="">
+                    <img src="imagens/imagem2.jpg" alt="">
+                    <img src="imagens/imagem3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sessão destinada a falar um pouco sobre a empresa e a missão-->
+    <section id="about">
+        <h2>Quem Somos</h2>
+        <p>Somos uma empresa especializada em serviços de climatização, comprometida com a qualidade e a satisfação dos nossos clientes.</p>
+        <h3>Nossa Missão</h3>
+        <p>Proporcionar conforto e bem-estar através de soluções inovadoras e sustentáveis em climatização.</p>
+    </section>
+
+    <!--Sessão destinada a explicar a mostrar os serviços fornecidos pela empresa-->
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <h3>Instalação de Ar-Condicionado</h3>
+        <p>Oferecemos instalação de ar-condicionado de todas as marcas e modelos, garantindo um serviço rápido e eficiente.</p>
+        <h3>Manutenção e Reparos</h3>
+        <p>Serviço completo de manutenção e reparo para manter seu sistema de climatização funcionando perfeitamente.</p>
+        <h3>Consultoria Técnica</h3>
+        <p>Consultoria especializada para ajudar na escolha do melhor sistema de climatização para seu espaço.</p>
+        <h3>Soluções de Eficiência Energética</h3>
+        <p>Soluções para otimizar o uso de energia e reduzir custos operacionais.</p>
+        <button>Ver Todos os Serviços</button>
+    </section>
+
+    <!--Sessão destinada aos comentários de clientes passados-->
+    <section id="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <blockquote>"Excelente serviço! Profissionais qualificados e atendimento de primeira. Recomendo a todos." - João Silva</blockquote>
+        <blockquote>"Resolvi todos os problemas de climatização da minha empresa com a ajuda deles. Muito satisfeita!" - Maria Oliveira</blockquote>
+        <blockquote>"Serviço rápido e eficiente. Não poderia estar mais feliz com o resultado!" - Carlos Pereira</blockquote>
+    </section>
+
+    <!--Sessão para entrar em contato com a empresa-->
+    <section id="contact">
+        <h2>Entre em Contato Conosco</h2>
+        <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+        <p><strong>Email:</strong> contato@[seudominio].com</p>
+        <p><strong>Endereço:</strong> Rua Exemplo, 123, Bairro, Cidade, Estado</p>
+        <p><strong>Horário de Funcionamento:</strong></p>
+        <ul>
+            <li>Segunda a Sexta: 08:00 - 18:00</li>
+            <li>Sábado: 09:00 - 14:00</li>
+        </ul>
+
+        <form action="envia-email.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!--Rodapé da página com informações rápidas de contato-->
+    <footer>
+        <p>[Nome do Seu Negócio] - Todos os direitos reservados © [Ano Atual]</p>
+        <p>Redes Sociais: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
