@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #333;
+}
+
+.printitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    font-size: 450%;
+    margin: 0;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px #0D0D0D);
+    text-transform: uppercase;
+}
+
+.carrossel p {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    font-size: 100%;
+    margin: 0;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px #0D0D0D);
+    text-transform: uppercase;
+}
+
+/*
+.carrossel button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+*/
+
+.slider {
+    filter: drop-shadow(0px 0px 10px #0D0D0D);
+    overflow: hidden;
+    width: 1250px;
+    height: 570px;
+    border-radius: 25px;
+}
+
+.container {
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+}
+
+.container img {
+    object-fit: fill;
+    margin-top: -200px;
+    width: 1250px;
+    height: 945px;
+    opacity: 0.8;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #444;
+}
+
+nav a {
+    color: #fff;
+    padding: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
