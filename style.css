@@ -20,6 +20,7 @@ header {
     margin: 0;
     min-height: 100vh;
     background-color: #333;
+    border-radius: 40px;
 }
 
 .printitle {
@@ -82,11 +83,19 @@ header {
     opacity: 0.8;
 }
 
+.bloco-conteudo {
+    background-color: #afafaf;
+    width: 60rem;
+    height: 20%;
+    padding: 2%;
+    border-radius: 2rem;
+}
+
 nav {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #444;
+    background-color: #313131;
 }
 
 nav a {
@@ -122,4 +131,10 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+#contact {
+    width: 66.9%;
+    margin-left: auto;
+    margin-right: auto;
 }
