@@ -85,10 +85,24 @@ header {
 
 .bloco-conteudo {
     background-color: #afafaf;
-    width: 60rem;
+    width: 80%;
     height: 20%;
     padding: 2%;
     border-radius: 2rem;
+}
+
+.bloco-serv {
+    background-color: #afafaf;
+    width: 40%;
+    height: 10%;
+    padding: 1%;
+    border-radius: 2rem;
+    margin: 2%;
+    position: relative;
+}
+
+.center-btn {
+    text-align: center;
 }
 
 nav {
@@ -137,4 +151,23 @@ button:hover {
     width: 66.9%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#serv2 {
+    position: relative;
+    left: 54.5%;
+}
+
+#serv4 {
+    position: relative;
+    left: 54.5%;
+}
+
+#servbutton {
+    position: relative;
+    text-align: center;
+}
+
+#testimonials {
+    background-color: rgb(148, 148, 148);
 }
