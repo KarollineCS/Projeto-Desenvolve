@@ -28,3 +28,36 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.recomendations button').classList.toggle('darkmode');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const fotos = document.querySelectorAll('.foto-serv');
+    fotos.forEach(foto => {
+        foto.addEventListener('click', function () {
+            ampliarFoto(foto);
+        });
+    });
+});
+
+function ampliarFoto(element) {
+    const imgSrc = element.src;
+    const modal = document.createElement("div");
+    modal.style.position = "fixed";
+    modal.style.top = "0";
+    modal.style.left = "0";
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.backgroundColor = "rgba(0,0,0,0.8)";
+    modal.style.display = "flex";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.zIndex = "1000";
+    modal.onclick = function() { document.body.removeChild(modal); };
+
+    const img = document.createElement("img");
+    img.src = imgSrc;
+    img.style.maxWidth = "90%";
+    img.style.maxHeight = "90%";
+
+    modal.appendChild(img);
+    document.body.appendChild(modal);
+}
