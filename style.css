@@ -12,6 +12,20 @@ header {
     text-align: center;
 }
 
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #0D0D0D;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
 .carrossel {
     position: relative;
     display: flex;
