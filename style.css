@@ -231,3 +231,64 @@ textarea {
 #testimonials {
     background-color: rgb(148, 148, 148);
 }
+
+/* Media Queries */
+@media (max-width: 600px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    .printitle {
+        font-size: 200%;
+    }
+
+    .bloco-conteudo, .bloco-serv {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .foto-serv {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 0.75rem;
+    }
+
+    .printitle {
+        font-size: 300%;
+    }
+
+    .bloco-conteudo, .bloco-serv {
+        width: 80%;
+        padding: 1.5rem;
+    }
+
+    .foto-serv {
+        width: 45%;
+        margin: 5px;
+    }
+}
+
+@media (min-width: 1025px) {
+    header {
+        padding: 1rem;
+    }
+
+    .printitle {
+        font-size: 450%;
+    }
+
+    .bloco-conteudo, .bloco-serv {
+        width: 45%;
+        padding: 2rem;
+    }
+
+    .foto-serv {
+        width: 30%;
+        margin: 10px;
+    }
+}
